@@ -1,0 +1,253 @@
+:root {
+  --color-primary-dark-blue: hsl(240, 38%, 20%);
+  --color-primary-grayish-blue: hsl(240, 18%, 77%); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+main {
+  height: 100%;
+  width: 144rem;
+  position: relative; }
+  @media (max-width: 1050px) {
+    main {
+      width: 375px; } }
+
+.bg-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+  @media (max-width: 1050px) {
+    .bg-1 {
+      width: 375px;
+      height: auto; }
+      .bg-1 .bg-1__img {
+        width: 100%; } }
+
+.bg-2 {
+  position: absolute;
+  top: 8rem;
+  right: 12rem; }
+  @media (max-width: 1200px) {
+    .bg-2 {
+      right: 5rem; } }
+  @media (max-width: 1050px) {
+    .bg-2 {
+      top: 0;
+      left: 1.2rem; }
+      .bg-2 .bg-2__img {
+        height: auto;
+        width: 35rem; } }
+
+.bg-3 {
+  position: absolute;
+  top: 24rem;
+  left: 25rem; }
+  @media (max-width: 1400px) {
+    .bg-3 {
+      left: 22rem; } }
+  @media (max-width: 1350px) {
+    .bg-3 {
+      left: 20rem; } }
+  @media (max-width: 1300px) {
+    .bg-3 {
+      left: 18rem; } }
+  @media (max-width: 1250px) {
+    .bg-3 {
+      left: 16rem; } }
+  @media (max-width: 1200px) {
+    .bg-3 {
+      left: 14rem; } }
+  @media (max-width: 1050px) {
+    .bg-3 {
+      top: 40rem;
+      left: 16rem; }
+      .bg-3 .bg-3__img {
+        width: 5rem;
+        height: auto; } }
+
+.containerForPhoto {
+  height: 54rem;
+  width: 54rem;
+  position: absolute;
+  top: 14rem;
+  right: 21rem;
+  z-index: 50;
+  overflow: hidden;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
+  display: flex;
+  border-radius: 1rem; }
+  @media (max-width: 1400px) {
+    .containerForPhoto {
+      right: 19rem; } }
+  @media (max-width: 1350px) {
+    .containerForPhoto {
+      right: 17rem; } }
+  @media (max-width: 1300px) {
+    .containerForPhoto {
+      right: 13rem; } }
+  @media (max-width: 1250px) {
+    .containerForPhoto {
+      right: 10rem; } }
+  @media (max-width: 1200px) {
+    .containerForPhoto {
+      height: 45rem;
+      width: 45rem;
+      top: 17rem; } }
+  @media (max-width: 1050px) {
+    .containerForPhoto {
+      top: 3rem;
+      left: 4rem;
+      height: 30rem;
+      width: 30rem;
+      box-shadow: 1rem 2rem 6rem rgba(32, 32, 70, 0.37); } }
+
+.photo {
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s ease-in; }
+  @media (max-width: 1050px) {
+    .photo {
+      background-size: cover; } }
+
+.containerForComment {
+  position: absolute;
+  top: 30rem;
+  left: 16rem;
+  height: 28rem;
+  width: 60rem;
+  z-index: 100;
+  overflow: hidden; }
+  @media (max-width: 1400px) {
+    .containerForComment {
+      left: 14rem; } }
+  @media (max-width: 1350px) {
+    .containerForComment {
+      left: 12rem; } }
+  @media (max-width: 1300px) {
+    .containerForComment {
+      left: 10rem; } }
+  @media (max-width: 1250px) {
+    .containerForComment {
+      left: 7rem; } }
+  @media (max-width: 1200px) {
+    .containerForComment {
+      height: 27rem;
+      width: 53rem; } }
+  @media (max-width: 1050px) {
+    .containerForComment {
+      top: 42rem;
+      left: 1rem;
+      width: 35rem; } }
+
+.comment {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s ease-in; }
+  .comment__text {
+    font-size: 3rem;
+    line-height: 1.6;
+    color: var(--color-primary-dark-blue);
+    margin-bottom: 2rem; }
+    @media (max-width: 1200px) {
+      .comment__text {
+        font-size: 2.5rem; } }
+    @media (max-width: 1050px) {
+      .comment__text {
+        font-size: 2rem;
+        text-align: center; } }
+  .comment__author {
+    font-size: 1.6rem; }
+    @media (max-width: 1050px) {
+      .comment__author {
+        text-align: center;
+        display: flex;
+        flex-direction: column; } }
+    .comment__author .name {
+      color: var(--color-primary-dark-blue);
+      font-weight: 700; }
+    .comment__author .job {
+      color: var(--color-primary-grayish-blue); }
+
+.btns {
+  position: absolute;
+  /*
+  bottom: 10rem;
+  */
+  top: 66rem;
+  right: 60rem;
+  z-index: 200; }
+  @media (max-width: 1400px) {
+    .btns {
+      right: 58rem; } }
+  @media (max-width: 1350px) {
+    .btns {
+      right: 56rem; } }
+  @media (max-width: 1300px) {
+    .btns {
+      right: 52rem; } }
+  @media (max-width: 1250px) {
+    .btns {
+      right: 49rem; } }
+  @media (max-width: 1200px) {
+    .btns {
+      top: 60rem;
+      right: 44rem; } }
+  @media (max-width: 1050px) {
+    .btns {
+      top: 31rem;
+      right: 15rem; } }
+
+.btn {
+  border: none;
+  background-color: white;
+  padding: 1rem 1.5rem;
+  cursor: pointer; }
+
+.btn--left {
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  padding-top: 1.1rem; }
+
+.btn--right {
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  padding-top: 1.1rem;
+  margin-left: -1rem; }
+
+@media (max-width: 1050px) {
+  .photo-1 .hero-1 {
+    height: 300px;
+    width: 300px; } }
+
+@media (max-width: 1050px) {
+  .hero-2 {
+    height: 300px;
+    width: 300px; } }
+
+.photo-2 {
+  background-size: cover; }
+  @media (max-width: 1050px) {
+    .photo-2 {
+      background-size: cover; } }
+
+.comment-2 {
+  transform: translateY(-30rem); }
